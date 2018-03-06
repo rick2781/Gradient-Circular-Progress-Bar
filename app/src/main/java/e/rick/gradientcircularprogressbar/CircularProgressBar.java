@@ -153,6 +153,10 @@ public class CircularProgressBar extends View {
         this.invalidate();
     }
 
+    public float getProgress() {
+        return progress;
+    }
+
     public void setForegroundBarGradientColors(@ColorInt int... foregroundBarGradientColors) {
 
         this.foregroundBarGradientColors = foregroundBarGradientColors;
@@ -303,4 +307,6 @@ public class CircularProgressBar extends View {
         backgroundCircle.setColor(backgroundProgressColor);
         invalidate();
     }
+
+
 }
